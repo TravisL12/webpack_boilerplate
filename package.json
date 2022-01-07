@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Travis Lawrence <travis@instabase.com>",
+  "bin": {
+    "trav_boilerplate": "src/bin.js"
+  },
   "license": "MIT",
   "scripts": {
     "start": "NODE_ENV=development yarn webpack serve --config config/webpack.dev.js",
