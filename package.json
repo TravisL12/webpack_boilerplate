@@ -1,0 +1,14 @@
+{
+  "name": "webpack_trial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Travis Lawrence <travis@instabase.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
