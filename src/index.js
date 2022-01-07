@@ -1,3 +1,5 @@
-import { hello } from "./scripts/application";
+import { helloElement } from "./scripts/application";
+import "./styles/styles.css";
 
-hello();
+const root = document.getElementById("root");
+root.appendChild(helloElement());

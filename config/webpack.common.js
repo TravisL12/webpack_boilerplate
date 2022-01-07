@@ -15,4 +15,12 @@ module.exports = {
       template: "index.html",
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.(sass|scss|css)$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };
