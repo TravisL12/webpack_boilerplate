@@ -5,10 +5,14 @@
   "author": "Travis Lawrence <travis@instabase.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn webpack --config webpack.config.js"
+    "start": "NODE_ENV=development yarn webpack serve --config config/webpack.dev.js",
+    "build": "NODE_ENV=development yarn webpack --config config/webpack.common.js"
   },
   "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2",
+    "webpack-merge": "^5.8.0"
   }
 }
