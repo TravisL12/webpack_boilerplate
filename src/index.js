@@ -1,5 +1,5 @@
 import { helloElement } from "./scripts/application";
-import "./styles/styles.css";
+import "./styles/styles.scss";
 
 const root = document.getElementById("root");
 root.appendChild(helloElement());

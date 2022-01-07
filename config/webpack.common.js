@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Output Management",
+      title: "Webpack Fun",
       filename: "index.html",
       template: "index.html",
     }),
@@ -19,7 +19,15 @@ module.exports = {
     rules: [
       {
         test: /\.(sass|scss|css)$/i,
-        use: ["style-loader", "css-loader"],
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: { sourceMap: true, importLoaders: 1, modules: false },
+          },
+          { loader: "postcss-loader", options: { sourceMap: true } },
+          { loader: "sass-loader", options: { sourceMap: true } },
+        ],
       },
     ],
   },
