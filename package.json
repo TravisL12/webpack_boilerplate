@@ -12,6 +12,7 @@
     "build": "NODE_ENV=development yarn webpack --config config/webpack.common.js"
   },
   "devDependencies": {
+    "child_process": "^1.0.2",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
     "postcss-loader": "^6.2.1",
