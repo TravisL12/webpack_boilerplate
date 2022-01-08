@@ -13,7 +13,11 @@ function main(command) {
 }
 
 const directoryName = process.argv[2];
-const cloneCommand = `git clone --depth 1 git@github.com:TravisL12/webpack_boilerplate.git ${repoDirectory}`;
+const cloneCommand = `
+  git clone --depth 1 git@github.com:TravisL12/webpack_boilerplate.git ${directoryName} &&
+  cd ${directoryName} &&
+  rm -rf .git && git init
+`;
 const installed = main(cloneCommand);
 if (!installed) process.exit();
 
